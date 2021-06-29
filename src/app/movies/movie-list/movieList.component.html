@@ -1,0 +1,6 @@
+<!-- <h2>List Movies</h2> -->
+<div class="row" *ngIf="movies">
+    <div class="col-sm" *ngFor="let movie of movies;">
+        <app-movieItem *ngIf="movie" [movieItem]="movie"></app-movieItem>
+    </div>
+</div>

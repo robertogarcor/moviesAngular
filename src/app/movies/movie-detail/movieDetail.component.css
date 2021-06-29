@@ -1,0 +1,21 @@
+div {
+    margin: 0 15px;   
+}
+
+div img {
+    margin-top: 40px;
+    background-color: darkgrey;
+    border-radius: 10px 10px 0;
+    padding: 0;
+    width: 200px;
+    height: 250px;
+}
+
+div p {
+    /*width: 50%;*/
+    margin-top: 40px;
+    font-weight: bold;
+    line-height: 2.7em;
+    font-size: 1.1em;
+    padding: 0;
+}
