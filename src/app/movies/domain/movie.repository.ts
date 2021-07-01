@@ -1,9 +1,8 @@
 import { Injectable } from "@angular/core";
+import { MovieService } from "../services/movie.service";
 import { Movie } from "./movie"
 
-@Injectable({
-    providedIn: 'root'
-  })
+@Injectable()
 export class MovieRepositoy implements Repository {
 
      public getMovies(): Array<Movie> {

@@ -1,20 +1,29 @@
-import { Input, OnInit } from "@angular/core";
+import { Input} from "@angular/core";
 import { Component } from "@angular/core";
 import { Movie } from "../domain/movie";
+import { MovieItemDetailService } from "../services/movieItemDetail.service";
+
 
 @Component({
     selector: 'app-movieItem',
     templateUrl: './movieItem.component.html',
-    styleUrls: ['./movieItem.component.css']
+    styleUrls: ['./movieItem.component.css'],
 })
+export class MovieItem {
 
-export class MovieItem implements OnInit {
-    
-    
     @Input() movieItem: Movie;
     
-    ngOnInit(): void {
-        console.log("movieTitem:" + this.movieItem.title)
+    constructor(private movieItemDetailService : MovieItemDetailService) {
     }
 
+    selectedItem(item : Movie) {
+        this.movieItemDetailService.setMovieItemDetail(item);
+        console.log("movieTitem:" + this.movieItem.title)
+
+    }
+
+
+  
 }
+
+
