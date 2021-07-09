@@ -1,0 +1,19 @@
+<!-- Movie Detail -->
+<div class="aside">
+    <div class="row" *ngIf="movieItem">
+        <img class="col-lg-6 movie-image-detail" src="https://image.tmdb.org/t/p/w185/{{movieItem.poster_path}}" title="image-movie-item" alt="image-movie-item"/>
+        <div class="col-lg-6">
+            <p class="movie-title-detail">{{movieItem.title}}</p>
+            <div class="row movie-vote-detail">
+                <div class="movie-vote-progress-detail col-6">
+                    <mat-progress-spinner strokeWidth="10" defaultColor="" diameter="65" mode="determinate" value="{{valueProgress}}"></mat-progress-spinner>   
+                </div>
+                <div class="movie-vote-text-detail col-6">
+                    <p>{{valueProgress}}%</p>
+                </div>
+            </div>
+            <p class="movie-overview-detail">{{movieItem.overview}}</p>
+        </div>
+    </div>
+</div>  
+    

@@ -1,0 +1,30 @@
+.aside {
+    margin-top: 40px;
+}
+
+.movie-image-detail {
+    border-radius: 5px;
+    height: 400px;
+}
+
+.movie-title-detail {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: rgba(33,37,41,.9);     
+}
+
+.movie-vote-detail {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.movie-vote-text-detail{
+    margin: auto;
+    color: rgba(33,37,41,.7);
+}
+
+.movie-overview-detail {
+    margin-top: 20px;
+    text-align: justify;    
+}

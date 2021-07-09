@@ -18,16 +18,6 @@ h2 {
     
 }
 
-.content {
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 500px;
-}
-
-.aside, .content {
-    margin-top: 40px;
-}
-
 footer {
     background-color: #212529;
     text-align: center;

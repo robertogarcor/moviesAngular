@@ -1,0 +1,47 @@
+<!-- List Movies -->
+<div class="content" (scroll)="onMoviesListScroll($event)">
+    <div class="wrapper-btn-scroll-up">
+        <i [ngClass] ="'btn-scroll-no-hidden'"
+            (click)="scrollTop($event)"
+            *ngIf="showUpButton" class="fa fa-arrow-up btn-scroll-up" 
+            aria-hidden="true">
+        </i>
+    </div>
+        <div class="row" *ngIf="movies">
+            <div class="col-sm" *ngFor="let movie of movies;
+                                                let index = index; 
+                                                let count = count; 
+                                                let first = first; 
+                                                let last=last;">
+            <app-movieItem *ngIf="movie" 
+                            [movieItem]="movie" 
+                            [lastItem]="last" 
+                            [indexItem]="index"></app-movieItem>
+        </div>
+    </div>
+</div>
+<p class="movie-count">- Total Movies - {{countMovies}} -</p>
+
+
+
+<!-- <div class="wrapper-btn-scroll-up">
+            <i [ngClass] ="'btn-scroll-no-hidden'"
+                (click)="scrollTop()"
+                *ngIf="showGoUpButton" class="fa fa-arrow-up btn-scroll-up" 
+                aria-hidden="true"></i>
+        </div> -->
+
+
+        <!-- <div class="content">
+            <cdk-virtual-scroll-viewport itemSize="72" (scrolledIndexChange)="newData2($event)">
+                <div class="row" *ngIf="movies">
+                        <div class="col-sm" *cdkVirtualFor="let movie of movies;
+                                                            let index = index; 
+                                                            let count = count; 
+                                                            let first = first; 
+                                                            let last=last;">
+                        <app-movieItem *ngIf="movie" [movieItem]="movie" [lastItem]="last"></app-movieItem>
+                    </div>
+                </div>
+            </cdk-virtual-scroll-viewport>
+        </div> -->

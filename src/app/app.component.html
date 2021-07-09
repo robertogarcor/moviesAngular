@@ -4,36 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Movies</title>
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          <h3 class="header">Movies</h3>
-        </a>
+  <body>
+    
+    <!-- Header -->
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <h3 class="header">Movies</h3>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container -->
+    <div class="container wrapper">
+      <div class="row">
+        <!-- <div class="col-6"><h2>Movie List</h2></div> -->
+        <!-- <div class="col-6"><h2>Movie Detail</h2></div> -->
+        <app-movieList class="col-6"></app-movieList>
+        <app-movieDetail class="col-6"></app-movieDetail>
       </div>
     </div>
-  </header>
-  <!-- Container -->
-  <div class="container wrapper">
-    <div class="row">
-      <div class="col-6"><h2>Movie List</h2></div>
-      <div class="col-6"><h2>Movie Detail</h2></div>
-      <div class="content col-6">
-        <app-movieList></app-movieList>
-      </div>
-      <div class="aside col-6">
-        <app-movieDetail></app-movieDetail>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer>Angular Movies@2021 by Roberto</footer>
-</body>
+
+    <!-- Footer -->
+    <footer>Angular Movies@2021 by Roberto</footer>
+  </body>
 </html>
 
 
