@@ -1,5 +1,5 @@
 # moviesAngular
-Sample app Angular dinamic list master-slave. InLine DataSource. Scroll Pagination.
+Sample app Angular dinamic list master-slave. InLine DataSource. Pagination by scroll.
 
 ## ScreenShots
 

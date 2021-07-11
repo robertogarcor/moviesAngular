@@ -1,16 +1,16 @@
 export interface MovieApi {
 
     adult: boolean,
-    backdrop_path: String,
+    backdrop_path: String, // JavaScript Wrapper Object type 
     genreIds: Array<number>,
     id: number,
-    original_language: String,
+    original_language: String, 
     original_title: String,
-    overview: String,
+    overview: string, 
     popularity: number,
-    poster_path: String,
-    release_date: String,
-    title: String,
+    poster_path: string,
+    release_date: string, // TypeScript primitive type (Prefer using when possible.)
+    title: string,
     video: boolean,
     vote_average: number,
     vote_count: number
